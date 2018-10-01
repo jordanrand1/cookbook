@@ -1,6 +1,10 @@
 class Api::RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :update, :destroy]
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> server side code
   def index
     render json: Recipe.all
   end
@@ -11,7 +15,11 @@ class Api::RecipesController < ApplicationController
 
   def create
     recipe = Recipe.new(recipe_params)
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> server side code
     if recipe.save
       render json: recipe
     else
@@ -40,3 +48,12 @@ class Api::RecipesController < ApplicationController
       params.require(:recipe).permit(:name, :description)
     end
 end
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> server side code
